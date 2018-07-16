@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.LoginActivity">
+
+    <ImageView
+        android:id="@+id/login_banner_titulo"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:contentDescription="@string/fundo_do_titulo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:color/holo_green_dark" />
+
+    <TextView
+        android:id="@+id/login_titulo_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/titulo"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/login_banner_titulo"
+        app:layout_constraintEnd_toEndOf="@+id/login_banner_titulo"
+        app:layout_constraintStart_toStartOf="@+id/login_banner_titulo"
+        app:layout_constraintTop_toTopOf="@+id/login_banner_titulo" />
+
+    <ImageView
+        android:id="@+id/login_fundo_credenciais"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/fundo_das_credenciais"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_banner_titulo"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:color/holo_green_light" />
+
+    <EditText
+        android:id="@+id/login_texto_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="45dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="60dp"
+        android:drawableStart="@drawable/ic_login_email"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@id/login_fundo_credenciais"
+        app:layout_constraintStart_toStartOf="@id/login_fundo_credenciais"
+        app:layout_constraintTop_toTopOf="@+id/login_fundo_credenciais" />
+
+    <EditText
+        android:id="@+id/login_texto_senha"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:drawableStart="@drawable/ic_login_password_16"
+        android:ems="10"
+        android:hint="@string/senha"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="@+id/login_fundo_credenciais"
+        app:layout_constraintEnd_toEndOf="@+id/login_texto_email"
+        app:layout_constraintStart_toStartOf="@+id/login_texto_email"
+        app:layout_constraintTop_toBottomOf="@+id/login_texto_email"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/login_botao_entrar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/fundo_botao_branco"
+        android:text="@string/entrar"
+        app:layout_constraintEnd_toEndOf="@id/login_texto_email"
+        app:layout_constraintStart_toStartOf="@id/login_texto_email"
+        app:layout_constraintTop_toBottomOf="@+id/login_texto_senha" />
+
+    <TextView
+        android:id="@+id/login_texto_esqueceu_senha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/texto_esqueceu_sua_senha"
+        app:layout_constraintEnd_toEndOf="@+id/login_botao_entrar"
+        app:layout_constraintStart_toStartOf="@+id/login_botao_entrar"
+        app:layout_constraintTop_toBottomOf="@+id/login_botao_entrar" />
+
+    <TextView
+        android:id="@+id/login_texto_cadastrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Novo por aqui? Cadastre-se."
+        app:layout_constraintEnd_toEndOf="@+id/login_texto_esqueceu_senha"
+        app:layout_constraintStart_toStartOf="@+id/login_texto_esqueceu_senha"
+        app:layout_constraintTop_toBottomOf="@+id/login_texto_esqueceu_senha" />
+</android.support.constraint.ConstraintLayout>

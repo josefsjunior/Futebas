@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Futebas</string>
+    <string name="fundo_do_titulo">fundo do titulo</string>
+    <string name="titulo">FutebasApp</string>
+    <string name="email">e-mail</string>
+    <string name="senha">senha</string>
+    <string name="entrar">Entrar</string>
+    <string name="texto_esqueceu_sua_senha">Esqueceu sua senha?</string>
+    <string name="fundo_das_credenciais">fundo das credenciais</string>
+</resources>
